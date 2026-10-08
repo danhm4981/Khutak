@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خُطاك | تنظيم رحلات الحجاج</title>
+<style>
+:root{--green:#126b5d;--green2:#0b5148;--mint:#eaf4f1;--ink:#173a39;--muted:#6c8380;--line:#e1ebe8;--bg:#f7faf9;--white:#fff;--gold:#e7b85b;--red:#d75c57}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:12px 18px;font-weight:700;transition:.2s}button:hover{transform:translateY(-1px)}.primary{background:var(--green);color:white}.primary:hover{background:var(--green2)}.secondary{background:white;border:1px solid #b9d2cc;color:var(--green)}.soft{background:var(--mint);color:var(--green)}.danger{background:#fff0ef;color:var(--red)}.wrap{max-width:1180px;margin:auto;padding:0 22px}.topbar{height:76px;background:#ffffffeb;border-bottom:1px solid var(--line);display:flex;align-items:center;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.nav{display:flex;align-items:center;justify-content:space-between;width:100%;gap:20px}.brand{font-size:25px;font-weight:900;color:var(--green);letter-spacing:-1px}.brand span{color:#b5d4cc}.navlinks{display:flex;gap:24px;align-items:center}.navlinks a{color:var(--muted);text-decoration:none;font-size:14px;cursor:pointer}.navlinks a:hover{color:var(--green)}.hero{padding:65px 0 52px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:42px}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--mint);color:var(--green);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700}.hero h1{font-size:clamp(34px,4.5vw,56px);line-height:1.35;margin:18px 0;color:var(--green2)}.hero p{font-size:18px;color:var(--muted);max-width:560px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero-art{background:linear-gradient(145deg,#dbece7,#f4f7f2);border-radius:30px;min-height:355px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:28px}.map-art{width:100%;max-width:450px;height:290px;background:#f9fcfa;border:1px solid #dce9e4;border-radius:22px;position:relative;overflow:hidden;box-shadow:0 20px 55px #1a5a4d14}.road{position:absolute;border:5px solid #d7e7e1;border-radius:50%;transform:rotate(-22deg)}.road.r1{width:540px;height:180px;top:55px;left:-55px}.road.r2{width:470px;height:135px;top:105px;left:10px;transform:rotate(28deg)}.route{position:absolute;width:5px;height:245px;background:var(--green);border-radius:8px;top:26px;left:53%;transform:rotate(39deg)}.route:after{content:"";position:absolute;bottom:-7px;left:-7px;width:17px;height:17px;border-radius:50%;background:#fff;border:4px solid var(--green)}.pin{position:absolute;background:var(--green);color:white;padding:7px 11px;border-radius:10px;font-size:12px;box-shadow:0 5px 15px #145d5033}.pin.a{top:30px;right:24px}.pin.b{bottom:25px;left:24px}.map-label{position:absolute;bottom:16px;right:18px;background:white;padding:8px 12px;border-radius:10px;font-size:12px;box-shadow:0 4px 15px #173a3910}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:20px 0 66px}.feature,.card{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 28px #214d4207}.icon{width:48px;height:48px;border-radius:15px;background:var(--mint);display:grid;place-items:center;font-size:23px;margin-bottom:15px}.feature h3{margin:0 0 8px}.feature p{color:var(--muted);font-size:14px;margin:0}.section-title{text-align:center;margin:12px auto 28px}.section-title h2{font-size:30px;margin:0 0 6px}.section-title p{color:var(--muted);margin:0}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px;text-align:center}.app{display:none;min-height:calc(100vh - 76px)}.app.active{display:block}.app-layout{display:grid;grid-template-columns:230px 1fr;gap:24px;padding-top:28px;padding-bottom:45px}.sidebar{background:white;border:1px solid var(--line);border-radius:20px;padding:18px;height:max-content;position:sticky;top:96px}.side-brand{font-size:20px;font-weight:900;color:var(--green);padding:8px 10px 18px}.sidebtn{width:100%;text-align:right;display:flex;gap:10px;align-items:center;background:transparent;color:var(--muted);margin:3px 0}.sidebtn.active,.sidebtn:hover{background:var(--mint);color:var(--green)}.side-bottom{border-top:1px solid var(--line);margin-top:18px;padding-top:14px}.content h1{font-size:29px;margin:0 0 4px}.sub{color:var(--muted);margin:0 0 24px}.grid2{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.stat{padding:18px}.stat small{color:var(--muted)}.stat strong{display:block;font-size:24px;margin:5px 0}.card h3{margin:0 0 14px}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.pill{display:inline-block;border-radius:999px;padding:5px 10px;font-size:12px;background:var(--mint);color:var(--green);font-weight:700}.muted{color:var(--muted)}.alert{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.alert:last-child{border:0}.alert .bubble{width:36px;height:36px;flex-shrink:0;border-radius:12px;background:#fff0e4;display:grid;place-items:center}.alert p{margin:2px 0 0;color:var(--muted);font-size:13px}.map-large{height:330px;background:#f5faf7;border:1px solid var(--line);border-radius:18px;position:relative;overflow:hidden}.map-large .road.r1{width:700px;height:250px;top:25px;left:-100px}.map-large .road.r2{width:600px;height:210px;top:90px;left:20px}.map-large .route{height:310px;top:0;left:51%}.map-large .pin.a{top:20px;right:18px}.map-large .pin.b{bottom:20px;left:18px}.form{max-width:650px;margin:38px auto 60px}.form .card{padding:30px}.field{margin:15px 0}.field label{display:block;font-weight:700;font-size:14px;margin-bottom:7px}.field input,.field select{width:100%;border:1px solid #d8e5e0;background:white;border-radius:12px;padding:13px 14px;outline:none}.field input:focus,.field select:focus{border-color:var(--green);box-shadow:0 0 0 3px #126b5d12}.role-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.role{border:1px solid var(--line);border-radius:16px;background:white;padding:20px;text-align:center;color:var(--ink)}.role.selected{border:2px solid var(--green);background:var(--mint)}.role .big{font-size:32px}.full{width:100%;margin-top:12px}.hidden{display:none!important}.toast{position:fixed;bottom:22px;left:22px;background:#173a39;color:white;padding:13px 18px;border-radius:13px;box-shadow:0 12px 30px #0002;display:none;z-index:30}.toast.show{display:block}.member{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.avatar{width:36px;height:36px;border-radius:50%;background:var(--mint);display:grid;place-items:center}.mobile-nav{display:none}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:42px}.hero-art{min-height:280px}.features{grid-template-columns:1fr}.navlinks{display:none}.app-layout{grid-template-columns:1fr}.sidebar{position:static;display:flex;overflow:auto;gap:4px;padding:8px}.side-brand,.side-bottom{display:none}.sidebtn{white-space:nowrap;width:auto;margin:0}.grid2,.grid3{grid-template-columns:1fr}.content h1{font-size:25px}.map-large{height:270px}.form{margin-top:22px}.wrap{padding:0 15px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap nav">
+  <div class="brand">خُطاك <span>⌁</span></div>
+  <nav class="navlinks"><a onclick="showHome()">الرئيسية</a><a href="#features">مميزاتنا</a><a href="#about">عن الموقع</a></nav>
+  <button class="secondary" onclick="showLogin()">تسجيل الدخول</button>
+ </div>
+</header>
+
+<main id="landing">
+ <section class="wrap hero">
+  <div>
+   <span class="eyebrow">🕋 تنظيم أسهل لرحلة الحج</span>
+   <h1>خطوتك أوضح،<br>ورحلتك أكثر تنظيمًا</h1>
+   <p>منصة تساعد قادة الحملات على تنظيم الرحلات، وتسهّل على الحجاج معرفة وجهتهم ومسارهم والتنبيهات المهمة.</p>
+   <div class="actions"><button class="primary" onclick="showLogin()">ابدأ الآن ←</button><button class="secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">اكتشف المميزات</button></div>
+  </div>
+  <div class="hero-art"><div class="map-art"><div class="road r1"></div><div class="road r2"></div><div class="route"></div><span class="pin a">📍 الوجهة</span><span class="pin b">نقطة البداية</span><span class="map-label">مسار مقترح • نموذج تجريبي</span></div></div>
+ </section>
+ <section class="wrap" id="features">
+  <div class="section-title"><h2>كل ما تحتاجه في مكان واحد</h2><p>أدوات واضحة تساعد على تنسيق حركة الحملة</p></div>
+  <div class="features">
+   <article class="feature"><div class="icon">🗺️</div><h3>تخطيط المسارات</h3><p>حدد الوجهة واطّلع على المسار المقترح والمسارات البديلة عند توفر المعلومات.</p></article>
+   <article class="feature"><div class="icon">👥</div><h3>إدارة الحملات</h3><p>اجمع معلومات حملتك وشارك رمز الانضمام مع الحجاج بسهولة.</p></article>
+   <article class="feature"><div class="icon">🔔</div><h3>تنبيهات واضحة</h3><p>شارك التعليمات وتحديثات التحرك مع أعضاء الحملة من مكان واحد.</p></article>
+  </div>
+ </section>
+ <section class="wrap" id="about" style="padding-bottom:55px"><div class="card row" style="flex-wrap:wrap"><div><h2 style="margin:0 0 6px">بسيط من أول خطوة</h2><p class="muted" style="margin:0">اختر دورك، ثم انتقل مباشرة إلى الأدوات المناسبة لك.</p></div><button class="primary" onclick="showLogin()">جرّب النموذج</button></div></section>
+</main>
+
+<section id="login" class="app">
+ <div class="wrap form">
+  <div class="card">
+   <div style="text-align:center"><div class="brand">خُطاك <span>⌁</span></div><h2 id="formTitle">أهلًا بك في خُطاك</h2><p class="muted">سجّل دخولك أو جرّب النموذج التجريبي</p></div>
+   <div id="loginFields">
+    <div class="field"><label>البريد الإلكتروني أو رقم الجوال</label><input id="email" placeholder="مثال: name@example.com"></div>
+    <div class="field"><label>كلمة المرور</label><input id="password" type="password" placeholder="أدخل كلمة المرور"></div>
+   </div>
+   <div class="field"><label>اختر نوع المستخدم</label><div class="role-grid">
+    <button class="role selected" id="leaderRole" onclick="chooseRole('leader')"><div class="big">👥</div><strong>قائد حملة</strong><div class="muted" style="font-size:12px">إدارة الحملة والمسار</div></button>
+    <button class="role" id="pilgrimRole" onclick="chooseRole('pilgrim')"><div class="big">🧍</div><strong>حاج</strong><div class="muted" style="font-size:12px">عرض المسار والتنبيهات</div></button>
+   </div></div>
+   <div class="field" id="campaignField"><label>اسم الحملة</label><input id="campaignName" value="حملة النور" placeholder="أدخل اسم الحملة"></div>
+   <div class="field hidden" id="codeField"><label>رمز الانضمام للحملة</label><input id="joinCode" placeholder="مثال: A7F3"></div>
+   <button class="primary full" onclick="enterApp()">متابعة إلى الموقع</button>
+   <button class="secondary full" onclick="showHome()">العودة للرئيسية</button>
+   <p class="muted" style="font-size:12px;text-align:center;margin-bottom:0">نسخة توضيحية: لا تُرسل البيانات إلى أي خادم.</p>
+  </div>
+ </div>
+</section>
+
+<section id="dashboard" class="app">
+ <div class="wrap app-layout">
+  <aside class="sidebar">
+   <div class="side-brand">خُطاك ⌁</div>
+   <button class="sidebtn active" data-page="homeDash" onclick="openPage('homeDash',this)">🏠 الرئيسية</button>
+   <button class="sidebtn" data-page="routes" onclick="openPage('routes',this)">🗺️ <span id="routeNav">المسارات</span></button>
+   <button class="sidebtn leader-only" data-page="campaign" onclick="openPage('campaign',this)">👥 حملتي</button>
+   <button class="sidebtn" data-page="alerts" onclick="openPage('alerts',this)">🔔 التنبيهات</button>
+   <div class="side-bottom"><button class="sidebtn" onclick="showHome()">↩ تسجيل الخروج</button></div>
+  </aside>
+  <div class="content">
+   <div id="homeDash" class="page">
+    <div class="row" style="flex-wrap:wrap"><div><h1 id="welcome">مرحبًا بك!</h1><p class="sub" id="welcomeSub">هذه نظرة سريعة على رحلتك.</p></div><span class="pill">● نموذج تجريبي</span></div>
+    <div class="grid3">
+     <div class="card stat"><small>الحملة</small><strong id="statCampaign">حملة النور</strong><span class="muted">الحملة الحالية</span></div>
+     <div class="card stat"><small>الوجهة الحالية</small><strong id="statDestination">جسر الجمرات</strong><span class="muted">قابلة للتغيير</span></div>
+     <div class="card stat"><small>حالة المسار</small><strong style="font-size:19px">مسار مقترح</strong><span class="muted">بيانات توضيحية</span></div>
+    </div>
+    <div class="grid2" style="margin-top:18px">
+     <div class="card"><div class="row"><h3>ملخص المسار</h3><span class="pill">تجريبي</span></div><div class="map-large"><div class="road r1"></div><div class="road r2"></div><div class="route"></div><span class="pin a">📍 جسر الجمرات</span><span class="pin b">نقطة البداية</span></div><button class="primary full" onclick="openPage('routes')">عرض المسارات</button></div>
+     <div class="card"><h3>آخر التنبيهات</h3><div class="alert"><div class="bubble">🔔</div><div><strong>تذكير بالتجمع</strong><p>يرجى التأكد من معرفة نقطة التجمع قبل التحرك.</p></div></div><div class="alert"><div class="bubble">ℹ️</div><div><strong>تعليمات الحملة</strong><p>تابع تحديثات قائد الحملة قبل بدء الرحلة.</p></div></div><button class="secondary full" onclick="openPage('alerts')">عرض جميع التنبيهات</button></div>
+    </div>
+   </div>
+
+   <div id="routes" class="page hidden">
+    <h1 id="routeTitle">تخطيط المسارات</h1><p class="sub">اختر وجهة لعرض نموذج للمسار المقترح.</p>
+    <div class="grid2">
+     <div class="card"><h3>اختيار الوجهة</h3><div class="field"><label>الوجهة</label><select id="destination" onchange="updateDestination()"><option>جسر الجمرات</option><option>مخيمات منى</option><option>المسجد الحرام</option><option>موقف الحافلات</option></select></div><div class="field"><label>مراعاة الازدحام</label><select id="crowd"><option>عرض المسار المقترح</option><option>تفضيل المسار الأقل ازدحامًا</option><option>تفضيل المسافة الأقصر</option></select></div><button class="primary full" onclick="planRoute()">عرض المسار المقترح</button><p class="muted" style="font-size:12px">المسار في هذه النسخة توضيحي وليس توجيهًا ملاحيًا حقيقيًا.</p></div>
+     <div class="card"><h3>الخريطة التوضيحية</h3><div class="map-large"><div class="road r1"></div><div class="road r2"></div><div class="route"></div><span class="pin a" id="mapDest">📍 جسر الجمرات</span><span class="pin b">نقطة البداية</span></div><p id="routeResult" class="muted">اختر وجهة ثم اضغط «عرض المسار المقترح».</p></div>
+    </div>
+   </div>
+
+   <div id="campaign" class="page hidden">
+    <h1>حملتي</h1><p class="sub">إدارة معلومات الحملة ومشاركة رمز الانضمام.</p>
+    <div class="grid2">
+     <div class="card"><div class="row"><h3 id="campaignHeading">حملة النور</h3><span class="pill">نشطة تجريبيًا</span></div><div class="row"><span class="muted">عدد الحجاج</span><strong>120</strong></div><hr style="border:0;border-top:1px solid var(--line);margin:16px 0"><div class="row"><span class="muted">الوجهة الحالية</span><strong id="campaignDest">جسر الجمرات</strong></div><div class="row" style="margin-top:12px"><span class="muted">رمز الانضمام</span><strong style="letter-spacing:2px">KHT7</strong></div><button class="secondary full" onclick="copyCode()">نسخ رمز الانضمام</button></div>
+     <div class="card"><h3>أعضاء الحملة</h3><div class="member"><span class="avatar">👤</span><div><strong>محمد العتيبي</strong><div class="muted" style="font-size:12px">حاج • عضو</div></div></div><div class="member"><span class="avatar">👤</span><div><strong>سارة أحمد</strong><div class="muted" style="font-size:12px">حاج • عضو</div></div></div><div class="member"><span class="avatar">👤</span><div><strong>عبدالله خالد</strong><div class="muted" style="font-size:12px">حاج • عضو</div></div></div><p class="muted" style="font-size:12px">أسماء تجريبية لعرض شكل الصفحة فقط.</p></div>
+    </div>
+   </div>
+
+   <div id="alerts" class="page hidden">
+    <div class="row"><div><h1>التنبيهات</h1><p class="sub">التحديثات والتعليمات المهمة للحملة.</p></div></div>
+    <div class="card leader-only" style="margin-bottom:18px"><h3>إرسال تنبيه جماعي</h3><div class="field"><label>نص التنبيه</label><input id="newAlert" placeholder="اكتب تعليمات مختصرة للحملة"></div><button class="primary" onclick="sendAlert()">إرسال التنبيه</button></div>
+    <div class="card" id="alertList"><div class="alert"><div class="bubble">🔔</div><div><strong>تذكير بالتجمع</strong><p>يرجى التأكد من معرفة نقطة التجمع قبل التحرك.</p><small class="muted">قبل قليل • تنبيه تجريبي</small></div></div><div class="alert"><div class="bubble">🟢</div><div><strong>تحديث موعد التحرك</strong><p>راجع تعليمات قائد الحملة قبل بدء الرحلة.</p><small class="muted">منذ ساعة • تنبيه تجريبي</small></div></div><div class="alert"><div class="bubble">ℹ️</div><div><strong>تعليمات مهمة</strong><p>التزم بالمسار المعتمد واتبع توجيهات الجهات المختصة.</p><small class="muted">اليوم • تنبيه تجريبي</small></div></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+<div id="toast" class="toast"></div>
+<footer class="footer"><div class="wrap">خُطاك — نموذج أولي تجريبي لتنظيم الحملات والمسارات. لا يعتمد على بيانات ازدحام مباشرة أو خرائط ملاحة حقيقية.</div></footer>
+<script>
+let role='leader';
+function hideAll(){document.getElementById('landing').style.display='none';document.querySelectorAll('.app').forEach(x=>x.classList.remove('active'))}
+function showHome(){hideAll();document.getElementById('landing').style.display='block';window.scrollTo({top:0,behavior:'smooth'})}
+function showLogin(){hideAll();document.getElementById('login').classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+function chooseRole(r){role=r;document.getElementById('leaderRole').classList.toggle('selected',r==='leader');document.getElementById('pilgrimRole').classList.toggle('selected',r==='pilgrim');document.getElementById('campaignField').classList.toggle('hidden',r!=='leader');document.getElementById('codeField').classList.toggle('hidden',r!=='pilgrim')}
+function enterApp(){
+ const name=(document.getElementById('campaignName').value||'حملتي').trim();
+ const code=document.getElementById('joinCode').value.trim();
+ if(role==='pilgrim' && !code){toast('أدخل رمز الحملة للتجربة، مثل KHT7');return}
+ document.getElementById('statCampaign').textContent=role==='leader'?name:'حملة النور';
+ document.getElementById('campaignHeading').textContent=name;
+ document.getElementById('welcome').textContent=role==='leader'?'مرحبًا بقائد الحملة':'مرحبًا بك أيها الحاج';
+ document.getElementById('welcomeSub').textContent=role==='leader'?'نظرة سريعة على حملتك وأدوات تنظيم الرحلة.':'وجهتك وتعليمات رحلتك في مكان واحد.';
+ document.querySelectorAll('.leader-only').forEach(x=>x.classList.toggle('hidden',role!=='leader'));
+ document.getElementById('routeNav').textContent=role==='leader'?'المسارات':'مساري';
+ hideAll();document.getElementById('dashboard').classList.add('active');openPage('homeDash');window.scrollTo({top:0,behavior:'smooth'});
+ toast('أهلًا بك! هذه نسخة تجريبية من خُطاك.');
+}
+function openPage(id,btn){
+ document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');
+ document.querySelectorAll('.sidebtn[data-page]').forEach(x=>x.classList.remove('active'));
+ if(btn)btn.classList.add('active');else{const b=document.querySelector('.sidebtn[data-page="'+id+'"]');if(b)b.classList.add('active')}
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function updateDestination(){const d=document.getElementById('destination').value;document.getElementById('mapDest').textContent='📍 '+d}
+function planRoute(){const d=document.getElementById('destination').value;document.getElementById('statDestination').textContent=d;document.getElementById('campaignDest').textContent=d;document.getElementById('mapDest').textContent='📍 '+d;document.getElementById('routeResult').textContent='تم عرض مسار توضيحي إلى '+d+'. تأكد من المسارات والتعليمات الرسمية قبل التحرك.';toast('تم تحديث الوجهة في النموذج التجريبي.')}
+function sendAlert(){const field=document.getElementById('newAlert');const val=field.value.trim();if(!val){toast('اكتب نص التنبيه أولًا.');return}const item=document.createElement('div');item.className='alert';item.innerHTML='<div class="bubble">🔔</div><div><strong></strong><p></p><small class="muted">الآن • تنبيه تجريبي</small></div>';item.querySelector('strong').textContent='تنبيه من قائد الحملة';item.querySelector('p').textContent=val;document.getElementById('alertList').prepend(item);field.value='';toast('أُضيف التنبيه إلى القائمة التجريبية.')}
+function copyCode(){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText('KHT7').then(()=>toast('تم نسخ الرمز KHT7')).catch(()=>toast('رمز الانضمام: KHT7'))}else toast('رمز الانضمام: KHT7')}
+let toastTimer;function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3000)}
+</script>
+</body>
+</html>
